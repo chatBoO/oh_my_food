@@ -1,0 +1,21 @@
+{
+  "name": "p3---oh-my-food",
+  "version": "1.0.0",
+  "description": "Scripts pour le Projet 3 - Oh my food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/styles.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chatBoO/p3-oh_my_food.git"
+  },
+  "author": "chatBoO",
+  "license": "ISC",
+  "browserslist": "last 4 versions",
+  "bugs": {
+    "url": "https://github.com/chatBoO/p3-oh_my_food/issues"
+  },
+  "homepage": "https://github.com/chatBoO/p3-oh_my_food#readme"
+}
