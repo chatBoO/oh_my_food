@@ -1,26 +1,9 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/typography";
 @import "./components/buttons";
-
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
-img{
-    object-fit: cover;
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    height: 65px;
-    padding-bottom: 5px;
-}
+@import "./layouts/header";
+@import "./layouts/footer";
 
 .location{
     display: flex;
@@ -70,7 +53,6 @@ header{
 .steps-button{
     position: relative;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     width: 100%;;
     height: 75px;
@@ -86,11 +68,13 @@ header{
         left: -10px;
         padding-left: 8px;
         padding-top: 4px;
-        color: white;
+        color: #ffff;
         background-color: $color-primary;
         border-radius: 50%;
     }
     & i{
+        width: 25%;
+        text-align: center;
         color: grey;
         font-size: 20px
     }
@@ -100,4 +84,45 @@ header{
             color: $color-primary;
         }
     }
+}
+
+.restaurants{
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding: 20px;
+    &__list{
+        display: flex;
+        flex-direction: column;
+        &__card{
+            display: flex;
+            flex-direction: column;
+            background-color: #ffff;
+            border-radius: 25px;
+            margin-bottom: 20px;
+            &__img{
+                width: 100%;
+                height: 170px;
+                border-radius: 15px 15px 0 0;
+            }
+            & figure{
+                position: relative;
+            }
+            &__text{
+                display: flex;
+                justify-content: space-between;
+                padding: 15px 25px 10px 10px;
+                & h3, p{
+                    margin: 0px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+.new-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
 }

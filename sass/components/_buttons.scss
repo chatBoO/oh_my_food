@@ -4,7 +4,24 @@
     align-items: center;
     width: 60%;
     height: 50px;
-    color: white;
+    color: #ffff;
     background: linear-gradient(to left top, #a65cdc,  #ec73da);
     border-radius: 25px;
+}
+
+.new-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 28px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #008766;
+    background-color: $color-tertiary;
+    border-radius: 2px;
+}
+
+.heart-button{
+    font-size: 25px
 }

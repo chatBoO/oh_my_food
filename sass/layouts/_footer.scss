@@ -1,0 +1,28 @@
+
+footer{
+    padding: 20px;
+    color: #ffff;
+    background-color: #353535;
+    & h3{
+        @include restaurants-title;
+    }
+    & ul{
+        padding-left: 0px;
+        margin: 0px;
+        & li{
+            list-style-type: none;
+            padding: 5px 0px;
+            & i{
+                font-size: 13px;
+                margin-right: 10px;
+            }
+        }
+    }
+    & span{
+        display: block;
+        padding: 5px 0px;
+    }
+    & a{
+        color: #ffff;
+    }
+}
