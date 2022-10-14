@@ -17,6 +17,14 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+h3 {
+  margin: 0px;
+}
+
+p {
+  margin: 0px;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -51,11 +59,18 @@ a {
 }
 
 header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: flex-end;
   height: 65px;
   padding-bottom: 5px;
+}
+header i {
+  position: absolute;
+  font-size: larger;
+  top: 30px;
+  left: 20px;
 }
 
 footer {
@@ -66,6 +81,7 @@ footer {
 footer h3 {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 footer ul {
   padding-left: 0px;
@@ -204,4 +220,31 @@ footer a {
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+section {
+  position: relative;
+}
+
+.restaurant-img {
+  width: 100%;
+  height: 300px;
+}
+
+.restaurant-menus {
+  position: relative;
+  top: -80px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 40px 30px 0px 0px;
+  background-color: #f7f7f7;
+}
+.restaurant-menus__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */

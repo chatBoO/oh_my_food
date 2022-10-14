@@ -5,6 +5,7 @@ footer{
     background-color: #353535;
     & h3{
         @include restaurants-title;
+        margin-bottom: 15px;
     }
     & ul{
         padding-left: 0px;
