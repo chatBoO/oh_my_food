@@ -30,7 +30,13 @@ a{
     color: #000;
 }
 
+@mixin menu-components{
+    font-weight: 300;
+    font-size:medium;
+}
+
 @mixin restaurants-title {
     font-family: 'Shrikhand', cursive;
     font-weight: 400;
 }
+
