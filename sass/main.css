@@ -1,5 +1,65 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 0.9;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 0.9;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+@-webkit-keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes spin {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -15,6 +75,7 @@ figure {
 
 body {
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 h3 {
@@ -64,6 +125,7 @@ a {
 .heart-button i {
   font-size: 22px;
   position: relative;
+  cursor: pointer;
 }
 .heart-button i:hover::after {
   transform: scale(1);
@@ -81,6 +143,46 @@ a {
   color: transparent;
   transform-origin: bottom;
   transition: transform 400ms;
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: opacity 3s forwards;
+          animation: opacity 3s forwards;
+  background-image: url(https://pbs.twimg.com/media/ElkWYo_XYAA2Kzx.jpg:large);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.loader__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  font-size: 270%;
+  color: beige;
+  border: 3px solid beige;
+  padding: 30px;
+  font-family: "Shrikhand", cursive;
+  transform: scale(0);
+  -webkit-animation-name: scale, spin;
+          animation-name: scale, spin;
+  -webkit-animation-duration: 1500ms, 1500ms;
+          animation-duration: 1500ms, 1500ms;
+  -webkit-animation-delay: 0ms, 1500ms;
+          animation-delay: 0ms, 1500ms;
+  -webkit-animation-direction: alternate, normal;
+          animation-direction: alternate, normal;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 header {

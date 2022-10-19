@@ -32,6 +32,7 @@
     & i{
         font-size: 22px;
         position: relative;
+        cursor: pointer;
         &:hover{
             &::after{
                 transform: scale(1);
@@ -50,6 +51,6 @@
         color: transparent;
         transform-origin: bottom;
         transition: transform 400ms;
+        }
     }
-}
 }
