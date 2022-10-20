@@ -21,11 +21,6 @@
         border: 3px solid beige;
         padding: 30px;
         font-family: 'Shrikhand', cursive;
-        animation-name: scale, spin;
-        animation-duration: 1500ms, 1500ms;
-        animation-delay: 0ms, 1500ms;
-        animation-direction: alternate, normal;
-        animation-iteration-count: 2;
-        animation-fill-mode: both;
+        animation: scale 3s ease-in-out both ;
     }
 }
