@@ -46,18 +46,50 @@
 }
 @-webkit-keyframes spin {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
   }
 }
 @keyframes spin {
   0% {
-    rotate: 0deg;
+    transform: rotate(0deg);
   }
   100% {
-    rotate: 360deg;
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes menus {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menus {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
   }
 }
 *, *::before, *::after {
@@ -379,6 +411,51 @@ section {
   font-size: 14px;
 }
 
+.menu-components--appetizer .button-menu:nth-child(2) {
+  -webkit-animation: menus 1500ms ease-out both;
+          animation: menus 1500ms ease-out both;
+}
+.menu-components--appetizer .button-menu:nth-child(3) {
+  -webkit-animation: menus 1500ms 200ms ease-out both;
+          animation: menus 1500ms 200ms ease-out both;
+}
+.menu-components--appetizer .button-menu:nth-child(4) {
+  -webkit-animation: menus 1500ms 300ms ease-out both;
+          animation: menus 1500ms 300ms ease-out both;
+}
+.menu-components--appetizer .button-menu:nth-child(5) {
+  -webkit-animation: menus 1500ms 400ms ease-out both;
+          animation: menus 1500ms 400ms ease-out both;
+}
+.menu-components--appetizer .button-menu:nth-child(6) {
+  -webkit-animation: menus 1500ms 500ms ease-out both;
+          animation: menus 1500ms 500ms ease-out both;
+}
+.menu-components--dish .button-menu:nth-child(2) {
+  -webkit-animation: menus 1500ms 600ms ease-out both;
+          animation: menus 1500ms 600ms ease-out both;
+}
+.menu-components--dish .button-menu:nth-child(3) {
+  -webkit-animation: menus 1500ms 700ms ease-out both;
+          animation: menus 1500ms 700ms ease-out both;
+}
+.menu-components--dish .button-menu:nth-child(4) {
+  -webkit-animation: menus 1500ms 800ms ease-out both;
+          animation: menus 1500ms 800ms ease-out both;
+}
+.menu-components--desserts .button-menu:nth-child(2) {
+  -webkit-animation: menus 1500ms 900ms ease-out both;
+          animation: menus 1500ms 900ms ease-out both;
+}
+.menu-components--desserts .button-menu:nth-child(3) {
+  -webkit-animation: menus 1500ms 1000ms ease-out both;
+          animation: menus 1500ms 1000ms ease-out both;
+}
+.menu-components--desserts .button-menu:nth-child(4) {
+  -webkit-animation: menus 1500ms 1100ms ease-out both;
+          animation: menus 1500ms 1100ms ease-out both;
+}
+
 .menu-components__title {
   font-weight: 300;
   font-size: medium;
@@ -416,5 +493,6 @@ section {
 .content__nav-button {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 15px;
 }/*# sourceMappingURL=main.css.map */
