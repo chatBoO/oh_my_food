@@ -406,46 +406,42 @@ section {
 }
 
 .menu-components--appetizer .button-menu:nth-child(2) {
-  -webkit-animation: menus 1500ms ease-out both;
-          animation: menus 1500ms ease-out both;
-}
-.menu-components--appetizer .button-menu:nth-child(3) {
-  -webkit-animation: menus 1500ms 200ms ease-out both;
-          animation: menus 1500ms 200ms ease-out both;
+  -webkit-animation: menus 1600ms ease-out both;
+          animation: menus 1600ms ease-out both;
 }
 .menu-components--appetizer .button-menu:nth-child(4) {
-  -webkit-animation: menus 1500ms 300ms ease-out both;
-          animation: menus 1500ms 300ms ease-out both;
-}
-.menu-components--appetizer .button-menu:nth-child(5) {
-  -webkit-animation: menus 1500ms 400ms ease-out both;
-          animation: menus 1500ms 400ms ease-out both;
+  -webkit-animation: menus 1600ms 300ms ease-out both;
+          animation: menus 1600ms 300ms ease-out both;
 }
 .menu-components--appetizer .button-menu:nth-child(6) {
-  -webkit-animation: menus 1500ms 500ms ease-out both;
-          animation: menus 1500ms 500ms ease-out both;
+  -webkit-animation: menus 1600ms 400ms ease-out both;
+          animation: menus 1600ms 400ms ease-out both;
+}
+.menu-components--appetizer .button-menu:nth-child(8) {
+  -webkit-animation: menus 1600ms 500ms ease-out both;
+          animation: menus 1600ms 500ms ease-out both;
 }
 .menu-components--dish .button-menu:nth-child(2) {
-  -webkit-animation: menus 1500ms 600ms ease-out both;
-          animation: menus 1500ms 600ms ease-out both;
-}
-.menu-components--dish .button-menu:nth-child(3) {
-  -webkit-animation: menus 1500ms 700ms ease-out both;
-          animation: menus 1500ms 700ms ease-out both;
+  -webkit-animation: menus 1600ms 600ms ease-out both;
+          animation: menus 1600ms 600ms ease-out both;
 }
 .menu-components--dish .button-menu:nth-child(4) {
-  -webkit-animation: menus 1500ms 800ms ease-out both;
-          animation: menus 1500ms 800ms ease-out both;
+  -webkit-animation: menus 1600ms 700ms ease-out both;
+          animation: menus 1600ms 700ms ease-out both;
+}
+.menu-components--dish .button-menu:nth-child(6) {
+  -webkit-animation: menus 1600ms 800ms ease-out both;
+          animation: menus 1600ms 800ms ease-out both;
 }
 .menu-components--desserts .button-menu:nth-child(2) {
-  -webkit-animation: menus 1500ms 900ms ease-out both;
-          animation: menus 1500ms 900ms ease-out both;
-}
-.menu-components--desserts .button-menu:nth-child(3) {
-  -webkit-animation: menus 1500ms 1000ms ease-out both;
-          animation: menus 1500ms 1000ms ease-out both;
+  -webkit-animation: menus 1600ms 900ms ease-out both;
+          animation: menus 1600ms 900ms ease-out both;
 }
 .menu-components--desserts .button-menu:nth-child(4) {
+  -webkit-animation: menus 1600ms 1000ms ease-out both;
+          animation: menus 1600ms 1000ms ease-out both;
+}
+.menu-components--desserts .button-menu:nth-child(6) {
   -webkit-animation: menus 1500ms 1100ms ease-out both;
           animation: menus 1500ms 1100ms ease-out both;
 }
