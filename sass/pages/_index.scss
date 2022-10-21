@@ -1,4 +1,4 @@
-.location{
+.location {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,12 +7,13 @@
     margin: 0px;
     background-color: #EAEAEA;
     box-shadow: 0px 6px 6px -9px black inset;
-    & i{
+
+    & i {
         font-size: 90%;
     }
 }
 
-.presentation{
+.presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,38 +22,51 @@
     padding: 40px 20px;
     background-color: #F7F7F7;
 
-    &__title{
-       width: 88%;
-       font-weight: 550;
+    &__title {
+        width: 88%;
+        font-weight: 550;
     }
-    &__text{
+
+    &__text {
         font-size: 19px;
         font-weight: 300;
         margin-bottom: 20px;
     }
 }
 
-.operation{
+.operation {
     padding: 20px;
-    &__steps{
+
+    &__steps {
         display: flex;
         flex-direction: column;
         padding-left: 15px;
-        
+
+        @media all and (min-width: $tablet-wide) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-left: 0px;
+
+            a{
+                width: 32%;
+            }
+            
+        }
     }
 }
 
-.steps-button{
+.steps-button {
     position: relative;
     display: flex;
     align-items: center;
-    width: 100%;;
+    width: 100%;
     height: 75px;
     box-shadow: 6px 6px 8px 0.5px rgb(221, 221, 221);
     background-color: #F7F7F7;
     border-radius: 25px;
     margin-bottom: 20px;
-    & span{
+
+    & span {
         width: 25px;
         height: 25px;
         position: absolute;
@@ -64,49 +78,71 @@
         background-color: $color-primary;
         border-radius: 50%;
     }
-    & i{
+
+    & i {
         width: 25%;
         text-align: center;
         color: grey;
         font-size: 20px
     }
-    &:hover{
+
+    &:hover {
         background-color: #f5edff;
         box-shadow: 9px 9px 9px 4px rgb(221, 221, 221);
-        & i{
+
+        & i {
             color: $color-primary;
+        }
+    }
+
+    @media all and (min-width: $tablet-wide){
+    
+        i{
+            padding: 20px;
+        }
+
+        h3{
+            font-size: 15px;
+            padding: 20px;
         }
     }
 }
 
-.restaurants{
+.restaurants {
     display: flex;
     flex-direction: column;
     background-color: #F7F7F7;
     padding: 20px;
-    &__list{
+
+    &__list {
         display: flex;
         flex-direction: column;
-        &__card{
+
+        &__card {
             display: flex;
             flex-direction: column;
             background-color: #ffff;
             border-radius: 25px;
             margin-bottom: 20px;
             box-shadow: 6px 6px 8px 0.5px rgb(221, 221, 221);
-            &__img{
+
+            &__img {
                 width: 100%;
                 height: 170px;
                 border-radius: 15px 15px 0 0;
             }
-            & figure{
+
+            & figure {
                 position: relative;
             }
-            &__text{
+
+            &__text {
                 display: flex;
                 justify-content: space-between;
                 padding: 15px 25px 10px 10px;
-                & h3, p{
+
+                & h3,
+                p {
                     margin: 0px;
                     padding-bottom: 10px;
                 }
@@ -115,7 +151,7 @@
     }
 }
 
-.new-button{
+.new-button {
     position: absolute;
     top: 10px;
     right: 10px;

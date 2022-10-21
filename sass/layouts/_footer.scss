@@ -27,7 +27,7 @@ footer {
         color: #ffff;
     }
 
-    @media all and (min-width: 768px) {
+    @media all and (min-width: $tablet-wide) {
         display: flex;
         align-items: center;
         flex-direction: column;
