@@ -227,7 +227,7 @@ a {
   height: 100%;
   -webkit-animation: opacity 3s forwards;
           animation: opacity 3s forwards;
-  background-image: url(../../images/loader.jpg);
+  background-image: url(/images/loader.jpg);
   -o-object-fit: cover;
      object-fit: cover;
 }
