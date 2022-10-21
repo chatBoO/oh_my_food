@@ -47,10 +47,10 @@
             justify-content: space-between;
             padding-left: 0px;
 
-            a{
+            a {
                 width: 32%;
             }
-            
+
         }
     }
 }
@@ -95,14 +95,13 @@
         }
     }
 
-    @media all and (min-width: $tablet-wide){
-    
-        i{
+    @media all and (min-width: $tablet-wide) {
+
+        i {
             padding: 20px;
         }
 
-        h3{
-            font-size: 15px;
+        h3 {
             padding: 20px;
         }
     }

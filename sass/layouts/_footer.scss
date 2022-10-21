@@ -7,14 +7,18 @@ footer {
         @include restaurants-title;
         margin-bottom: 15px;
     }
+}
+
+.footer__links {
 
     & ul {
-        padding-left: 0px;
+        padding: 0px;
         margin: 0px;
 
         & li {
             list-style-type: none;
             padding: 5px 0px;
+
 
             & i {
                 font-size: 13px;
@@ -26,8 +30,10 @@ footer {
     & a {
         color: #ffff;
     }
+}
 
-    @media all and (min-width: $tablet-wide) {
+@media all and (min-width: $tablet-wide) {
+    footer {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -43,7 +49,7 @@ footer {
             width: 80%;
             height: 80px;
 
-            ul{
+            ul {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -54,5 +60,4 @@ footer {
             }
         }
     }
-    
 }
