@@ -6,7 +6,7 @@
     z-index: 1;
   }
   99% {
-    opacity: 0.9;
+    opacity: 1;
     z-index: 1;
   }
   100% {
@@ -20,7 +20,7 @@
     z-index: 1;
   }
   99% {
-    opacity: 0.9;
+    opacity: 1;
     z-index: 1;
   }
   100% {
@@ -28,7 +28,7 @@
     z-index: -1;
   }
 }
-@-webkit-keyframes scale {
+@-webkit-keyframes loader {
   0% {
     transform: rotate(0deg) scale(0);
     opacity: 1;
@@ -39,14 +39,14 @@
   }
   70% {
     transform: rotate(360deg) scale(1);
-    opacity: 0.7;
+    opacity: 0.9;
   }
   100% {
     transform: rotate(360deg) scale(0.1);
-    opacity: 0;
+    opacity: 0.7;
   }
 }
-@keyframes scale {
+@keyframes loader {
   0% {
     transform: rotate(0deg) scale(0);
     opacity: 1;
@@ -57,11 +57,11 @@
   }
   70% {
     transform: rotate(360deg) scale(1);
-    opacity: 0.7;
+    opacity: 0.9;
   }
   100% {
     transform: rotate(360deg) scale(0.1);
-    opacity: 0;
+    opacity: 0.7;
   }
 }
 @-webkit-keyframes menus {
@@ -94,6 +94,42 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes check {
+  0% {
+    opacity: 1;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 20%;
+  }
+}
+@keyframes check {
+  0% {
+    opacity: 1;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 20%;
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 *, *::before, *::after {
@@ -191,7 +227,7 @@ a {
   height: 100%;
   -webkit-animation: opacity 3s forwards;
           animation: opacity 3s forwards;
-  background-image: url(https://pbs.twimg.com/media/ElkWYo_XYAA2Kzx.jpg:large);
+  background-image: url(../../images/loader.jpg);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -203,11 +239,13 @@ a {
   height: auto;
   font-size: 270%;
   color: beige;
-  border: 3px solid beige;
+  border: 3px solid #9356DC;
   padding: 30px;
   font-family: "Shrikhand", cursive;
-  -webkit-animation: scale 3s ease-in-out both;
-          animation: scale 3s ease-in-out both;
+  border-radius: 15px;
+  -webkit-animation: loader 3s ease-in-out both;
+          animation: loader 3s ease-in-out both;
+  background: linear-gradient(to left top, #a65cdc, #ec73da);
 }
 
 header {
@@ -405,45 +443,57 @@ section {
   font-size: 14px;
 }
 
-.menu-components--appetizer .button-menu:nth-child(2) {
+.menu-components--appetizer > .button-menu:nth-child(1) {
   -webkit-animation: menus 1600ms ease-out both;
           animation: menus 1600ms ease-out both;
 }
-.menu-components--appetizer .button-menu:nth-child(4) {
+.menu-components--appetizer > .button-menu:nth-child(2) {
   -webkit-animation: menus 1600ms 300ms ease-out both;
           animation: menus 1600ms 300ms ease-out both;
 }
-.menu-components--appetizer .button-menu:nth-child(6) {
+.menu-components--appetizer > .button-menu:nth-child(3) {
   -webkit-animation: menus 1600ms 400ms ease-out both;
           animation: menus 1600ms 400ms ease-out both;
 }
-.menu-components--appetizer .button-menu:nth-child(8) {
+.menu-components--appetizer > .button-menu:nth-child(4) {
   -webkit-animation: menus 1600ms 500ms ease-out both;
           animation: menus 1600ms 500ms ease-out both;
 }
-.menu-components--dish .button-menu:nth-child(2) {
+.menu-components--appetizer > .button-menu:nth-child(5) {
+  -webkit-animation: menus 1600ms 500ms ease-out both;
+          animation: menus 1600ms 500ms ease-out both;
+}
+.menu-components--dish > .button-menu:nth-child(1) {
   -webkit-animation: menus 1600ms 600ms ease-out both;
           animation: menus 1600ms 600ms ease-out both;
 }
-.menu-components--dish .button-menu:nth-child(4) {
+.menu-components--dish > .button-menu:nth-child(2) {
   -webkit-animation: menus 1600ms 700ms ease-out both;
           animation: menus 1600ms 700ms ease-out both;
 }
-.menu-components--dish .button-menu:nth-child(6) {
+.menu-components--dish > .button-menu:nth-child(3) {
   -webkit-animation: menus 1600ms 800ms ease-out both;
           animation: menus 1600ms 800ms ease-out both;
 }
-.menu-components--desserts .button-menu:nth-child(2) {
+.menu-components--dish > .button-menu:nth-child(4) {
   -webkit-animation: menus 1600ms 900ms ease-out both;
           animation: menus 1600ms 900ms ease-out both;
 }
-.menu-components--desserts .button-menu:nth-child(4) {
+.menu-components--desserts > .button-menu:nth-child(1) {
   -webkit-animation: menus 1600ms 1000ms ease-out both;
           animation: menus 1600ms 1000ms ease-out both;
 }
-.menu-components--desserts .button-menu:nth-child(6) {
-  -webkit-animation: menus 1500ms 1100ms ease-out both;
-          animation: menus 1500ms 1100ms ease-out both;
+.menu-components--desserts > .button-menu:nth-child(2) {
+  -webkit-animation: menus 1600ms 1100ms ease-out both;
+          animation: menus 1600ms 1100ms ease-out both;
+}
+.menu-components--desserts > .button-menu:nth-child(3) {
+  -webkit-animation: menus 1600ms 1200ms ease-out both;
+          animation: menus 1600ms 1200ms ease-out both;
+}
+.menu-components--desserts > .button-menu:nth-child(4) {
+  -webkit-animation: menus 1600ms 1300ms ease-out both;
+          animation: menus 1600ms 1300ms ease-out both;
 }
 
 .menu-components__title {
@@ -460,24 +510,57 @@ section {
 }
 
 .button-menu {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
-  padding: 10px 15px 10px 10px;
+  justify-content: space-between;
+  height: 70px;
   margin-bottom: 15px;
   background-color: white;
   border-radius: 15px;
   box-shadow: 6px 6px 8px 0.5px rgb(221, 221, 221);
+  overflow: hidden;
   cursor: pointer;
 }
-.button-menu__title {
-  max-width: 85%;
+.button-menu__informations {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px 15px 10px 10px;
+  overflow: hidden;
 }
-.button-menu p {
-  margin-top: 5px;
+.button-menu__informations__title {
+  overflow: hidden;
+}
+.button-menu__informations__title p,
+.button-menu__informations__title h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.button-menu__informations p {
+  margin-top: 5px;
+}
+.button-menu:hover > .button-menu__check {
+  -webkit-animation: check 600ms ease-in-out both;
+          animation: check 600ms ease-in-out both;
+}
+.button-menu:hover > .button-menu__check i {
+  -webkit-animation: rotation 600ms ease-in-out both;
+          animation: rotation 600ms ease-in-out both;
+}
+
+.button-menu__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  height: 100%;
+  width: 0%;
 }
 
 .content__nav-button {

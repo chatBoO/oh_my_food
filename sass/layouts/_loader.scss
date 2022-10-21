@@ -7,7 +7,7 @@
     width: 100%;
     height: 100%;
     animation: opacity 3s forwards;
-    background-image: url(https://pbs.twimg.com/media/ElkWYo_XYAA2Kzx.jpg:large);
+    background-image: url(../../images/loader.jpg);
     object-fit: cover;
 
     &__logo {
@@ -18,9 +18,11 @@
         height: auto;
         font-size: 270%;
         color: beige;
-        border: 3px solid beige;
+        border: 3px solid $color-primary;
         padding: 30px;
         font-family: 'Shrikhand', cursive;
-        animation: scale 3s ease-in-out both ;
+        border-radius: 15px;
+        animation: loader 3s ease-in-out both ;
+        background: linear-gradient(to left top, #a65cdc,  #ec73da);
     }
 }
