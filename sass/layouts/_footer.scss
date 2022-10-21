@@ -3,53 +3,35 @@ footer {
     color: #ffff;
     background-color: #353535;
 
-    & h3 {
-        @include restaurants-title;
-        margin-bottom: 15px;
-    }
-}
-
-.footer__links {
-
-    & ul {
-        padding: 0px;
-        margin: 0px;
-
-        & li {
-            list-style-type: none;
-            padding: 5px 0px;
-
-
-            & i {
-                font-size: 13px;
-                margin-right: 10px;
-            }
-        }
-    }
-
-    & a {
-        color: #ffff;
-    }
-}
-
-@media all and (min-width: $tablet-wide) {
-    footer {
+    @media all and (min-width: $tablet-wide) {
         display: flex;
         align-items: center;
         flex-direction: column;
+    }
 
-        h3 {
+    & h3 {
+        @include restaurants-title;
+        margin-bottom: 15px;
+
+        @media all and (min-width: $tablet-wide) {
             font-size: 30px;
             text-align: center;
         }
+    }
 
-        .footer__links {
+    .footer__links {
+        @media all and (min-width: $tablet-wide) {
             display: flex;
             justify-content: space-between;
             width: 80%;
             height: 80px;
+        }
 
-            ul {
+        & ul {
+            padding: 0px;
+            margin: 0px;
+
+            @media all and (min-width: $tablet-wide) {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -58,6 +40,21 @@ footer {
                 height: 100%;
                 font-size: 25px;
             }
+
+            & li {
+                list-style-type: none;
+                padding: 5px 0px;
+
+
+                & i {
+                    font-size: 13px;
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        & a {
+            color: #ffff;
         }
     }
 }

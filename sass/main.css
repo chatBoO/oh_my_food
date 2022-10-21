@@ -148,6 +148,7 @@ figure {
 body {
   font-family: "Roboto", sans-serif;
   position: relative;
+  max-width: 1400px;
 }
 
 h3 {
@@ -237,44 +238,37 @@ footer {
   color: white;
   background-color: #353535;
 }
-footer h3 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-
-.footer__links ul {
-  padding: 0px;
-  margin: 0px;
-}
-.footer__links ul li {
-  list-style-type: none;
-  padding: 5px 0px;
-}
-.footer__links ul li i {
-  font-size: 13px;
-  margin-right: 10px;
-}
-.footer__links a {
-  color: white;
-}
-
 @media all and (min-width: 768px) {
   footer {
     display: flex;
     align-items: center;
     flex-direction: column;
   }
+}
+footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+@media all and (min-width: 768px) {
   footer h3 {
     font-size: 30px;
     text-align: center;
   }
+}
+@media all and (min-width: 768px) {
   footer .footer__links {
     display: flex;
     justify-content: space-between;
     width: 80%;
     height: 80px;
   }
+}
+footer .footer__links ul {
+  padding: 0px;
+  margin: 0px;
+}
+@media all and (min-width: 768px) {
   footer .footer__links ul {
     display: flex;
     flex-direction: column;
@@ -285,6 +279,18 @@ footer h3 {
     font-size: 25px;
   }
 }
+footer .footer__links ul li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+footer .footer__links ul li i {
+  font-size: 13px;
+  margin-right: 10px;
+}
+footer .footer__links a {
+  color: white;
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -366,6 +372,11 @@ footer h3 {
   color: grey;
   font-size: 20px;
 }
+@media all and (min-width: 768px) {
+  .steps-button i {
+    padding: 20px;
+  }
+}
 .steps-button:hover {
   background-color: #f5edff;
   box-shadow: 9px 9px 9px 4px rgb(221, 221, 221);
@@ -374,9 +385,6 @@ footer h3 {
   color: #9356DC;
 }
 @media all and (min-width: 768px) {
-  .steps-button i {
-    padding: 20px;
-  }
   .steps-button h3 {
     padding: 20px;
   }
@@ -391,6 +399,18 @@ footer h3 {
 .restaurants__list {
   display: flex;
   flex-direction: column;
+}
+@media all and (min-width: 768px) {
+  .restaurants__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media all and (min-width: 768px) {
+  .restaurants__list a {
+    width: 45%;
+  }
 }
 .restaurants__list__card {
   display: flex;
@@ -412,6 +432,11 @@ footer h3 {
   display: flex;
   justify-content: space-between;
   padding: 15px 25px 10px 10px;
+}
+@media all and (min-width: 768px) {
+  .restaurants__list__card__text {
+    align-items: center;
+  }
 }
 .restaurants__list__card__text h3,
 .restaurants__list__card__text p {
