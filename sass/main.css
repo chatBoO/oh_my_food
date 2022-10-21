@@ -285,12 +285,34 @@ footer ul li i {
   font-size: 13px;
   margin-right: 10px;
 }
-footer span {
-  display: block;
-  padding: 5px 0px;
-}
 footer a {
   color: white;
+}
+@media all and (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  footer h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  footer .footer__links {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 80px;
+  }
+  footer .footer__links ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+  }
 }
 
 .location {
