@@ -5,10 +5,22 @@ header{
     align-items: flex-end;
     height: 65px;
     padding-bottom: 5px;
-    & i{
+    & a {
         position: absolute;
         font-size: larger;
         top: 30px;
         left: 20px;
+
+        & i {
+            margin-right: 7px;
+        }
+
+        .return-button{
+            display: none;
+
+            @media all and (min-width: $tablet-width) {
+                display: initial;
+            }
+        }
     }
 }

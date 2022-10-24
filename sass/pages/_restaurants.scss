@@ -28,6 +28,12 @@ section {
 }
 
 .menu-components {
+    @media all and (min-width: $desktop-width) {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
     &--appetizer {
         >.button-menu {
             &:nth-child(1) {
@@ -58,16 +64,19 @@ section {
             &:nth-child(1) {
                 animation: menus 1600ms 600ms ease-out both;
             }
+
             &:nth-child(2) {
-             animation: menus 1600ms 700ms ease-out both;
+                animation: menus 1600ms 700ms ease-out both;
             }
+
             &:nth-child(3) {
                 animation: menus 1600ms 800ms ease-out both;
             }
+
             &:nth-child(4) {
                 animation: menus 1600ms 900ms ease-out both;
             }
-        } 
+        }
     }
 
     &--desserts {
@@ -75,22 +84,29 @@ section {
             &:nth-child(1) {
                 animation: menus 1600ms 1000ms ease-out both;
             }
+
             &:nth-child(2) {
-             animation: menus 1600ms 1100ms ease-out both;
+                animation: menus 1600ms 1100ms ease-out both;
             }
+
             &:nth-child(3) {
                 animation: menus 1600ms 1200ms ease-out both;
             }
+
             &:nth-child(4) {
                 animation: menus 1600ms 1300ms ease-out both;
             }
-        } 
+        }
     }
 }
 
 
 .menu-components__title {
     @include menu-components;
+
+    @media all and (min-width: $desktop-width) {
+        width: 70px;
+    }
 }
 
 .menu-components__title::after {
@@ -114,28 +130,33 @@ section {
     overflow: hidden;
     cursor: pointer;
 
+    @media all and (min-width: $desktop-width) {
+        width: 30%;
+    }
+
     &__informations {
-            display: flex;
-            align-items: flex-end;
-            justify-content: space-between;
-            width: 100%;
-            padding: 10px 15px 10px 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 15px 10px 10px;
+        overflow: hidden;
+
+        &__title {
             overflow: hidden;
-    
-            &__title {
-                overflow: hidden;
-                p,
-                h3 {
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    white-space: nowrap;
-                }
-            }
-    
+
             p {
                 margin-top: 5px;
             }
+
+            p,
+            h3 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
         }
+    }
 
     &:hover>.button-menu__check {
         animation: check 600ms ease-in-out both;
@@ -145,17 +166,18 @@ section {
         animation: rotation 600ms ease-in-out both;
     }
 }
-    .button-menu__check {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-size: 25px;
-        border-radius: 0px 15px 15px 0px;
-        background-color: #99E2D0;
-        height: 100%;
-        width: 0%;
-    }
+
+.button-menu__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #99E2D0;
+    height: 100%;
+    width: 0%;
+}
 
 .content__nav-button {
     display: flex;

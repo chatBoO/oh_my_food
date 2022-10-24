@@ -149,6 +149,7 @@ body {
   font-family: "Roboto", sans-serif;
   position: relative;
   max-width: 1400px;
+  margin: auto;
 }
 
 h3 {
@@ -228,6 +229,37 @@ a {
   transition: transform 400ms;
 }
 
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  -webkit-animation: opacity 3s forwards;
+          animation: opacity 3s forwards;
+  background-image: url(/images/loader.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.loader__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  font-size: 270%;
+  color: beige;
+  border: 3px solid #9356DC;
+  padding: 30px;
+  font-family: "Shrikhand", cursive;
+  border-radius: 15px;
+  -webkit-animation: loader 3s ease-in-out both;
+          animation: loader 3s ease-in-out both;
+  background: linear-gradient(to left top, #a65cdc, #ec73da);
+}
+
 header {
   position: relative;
   display: flex;
@@ -236,11 +268,22 @@ header {
   height: 65px;
   padding-bottom: 5px;
 }
-header i {
+header a {
   position: absolute;
   font-size: larger;
   top: 30px;
   left: 20px;
+}
+header a i {
+  margin-right: 7px;
+}
+header a .return-button {
+  display: none;
+}
+@media all and (min-width: 768px) {
+  header a .return-button {
+    display: initial;
+  }
 }
 
 footer {
@@ -303,6 +346,11 @@ footer .footer__links ul {
 footer .footer__links ul li {
   list-style-type: none;
   padding: 5px 0px;
+  cursor: pointer;
+}
+footer .footer__links ul li i {
+  font-size: 16px;
+  margin-right: 10px;
 }
 @media all and (min-width: 768px) {
   footer .footer__links ul li {
@@ -313,10 +361,6 @@ footer .footer__links ul li {
 @media all and (min-width: 992px) {
   footer .footer__links ul li {
     padding: 0px;
-  }
-  footer .footer__links ul li i {
-    font-size: 16px;
-    margin-right: 10px;
   }
 }
 footer .footer__links ul a {
@@ -550,6 +594,13 @@ section {
   font-size: 14px;
 }
 
+@media all and (min-width: 992px) {
+  .menu-components {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .menu-components--appetizer > .button-menu:nth-child(1) {
   -webkit-animation: menus 1600ms ease-out both;
           animation: menus 1600ms ease-out both;
@@ -607,6 +658,11 @@ section {
   font-weight: 300;
   font-size: medium;
 }
+@media all and (min-width: 992px) {
+  .menu-components__title {
+    width: 70px;
+  }
+}
 
 .menu-components__title::after {
   content: "";
@@ -629,6 +685,11 @@ section {
   overflow: hidden;
   cursor: pointer;
 }
+@media all and (min-width: 992px) {
+  .button-menu {
+    width: 30%;
+  }
+}
 .button-menu__informations {
   display: flex;
   align-items: flex-end;
@@ -640,14 +701,14 @@ section {
 .button-menu__informations__title {
   overflow: hidden;
 }
+.button-menu__informations__title p {
+  margin-top: 5px;
+}
 .button-menu__informations__title p,
 .button-menu__informations__title h3 {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-}
-.button-menu__informations p {
-  margin-top: 5px;
 }
 .button-menu:hover > .button-menu__check {
   -webkit-animation: check 600ms ease-in-out both;

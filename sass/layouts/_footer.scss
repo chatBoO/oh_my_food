@@ -53,6 +53,12 @@ footer {
             & li {
                 list-style-type: none;
                 padding: 5px 0px;
+                cursor: pointer;
+
+                & i {
+                    font-size: 16px;
+                    margin-right: 10px;
+                }
 
                 @media all and (min-width: $tablet-width) {
                     display: flex;
@@ -61,11 +67,6 @@ footer {
 
                 @media all and (min-width: $desktop-width) {
                     padding: 0px;
-
-                    & i {
-                        font-size: 16px;
-                        margin-right: 10px;
-                    }
                 }
             }
 
