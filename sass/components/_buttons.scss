@@ -7,6 +7,14 @@
     color: #ffff;
     background: linear-gradient(to left top, #a65cdc,  #ec73da);
     border-radius: 25px;
+
+    @media all and (min-width: $tablet-width) {
+        width: 50%;
+    }
+
+    @media all and (min-width: $desktop-width) {
+        width: 40%;;
+    }
 }
 
 .new-button{

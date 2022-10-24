@@ -174,6 +174,16 @@ a {
   background: linear-gradient(to left top, #a65cdc, #ec73da);
   border-radius: 25px;
 }
+@media all and (min-width: 768px) {
+  .nav-button {
+    width: 50%;
+  }
+}
+@media all and (min-width: 992px) {
+  .nav-button {
+    width: 40%;
+  }
+}
 
 .new-button {
   display: flex;
@@ -216,37 +226,6 @@ a {
   color: transparent;
   transform-origin: bottom;
   transition: transform 400ms;
-}
-
-.loader {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  -webkit-animation: opacity 3s forwards;
-          animation: opacity 3s forwards;
-  background-image: url(/images/loader.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.loader__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  font-size: 270%;
-  color: beige;
-  border: 3px solid #9356DC;
-  padding: 30px;
-  font-family: "Shrikhand", cursive;
-  border-radius: 15px;
-  -webkit-animation: loader 3s ease-in-out both;
-          animation: loader 3s ease-in-out both;
-  background: linear-gradient(to left top, #a65cdc, #ec73da);
 }
 
 header {
@@ -295,6 +274,11 @@ footer h3 {
     height: 80px;
   }
 }
+@media all and (min-width: 992px) {
+  footer .footer__links {
+    height: auto;
+  }
+}
 footer .footer__links ul {
   padding: 0px;
   margin: 0px;
@@ -310,6 +294,12 @@ footer .footer__links ul {
     font-size: 16px;
   }
 }
+@media all and (min-width: 992px) {
+  footer .footer__links ul {
+    flex-direction: row;
+    padding: 10px;
+  }
+}
 footer .footer__links ul li {
   list-style-type: none;
   padding: 5px 0px;
@@ -320,11 +310,16 @@ footer .footer__links ul li {
     justify-content: center;
   }
 }
-footer .footer__links ul li i {
-  font-size: 16px;
-  margin-right: 10px;
+@media all and (min-width: 992px) {
+  footer .footer__links ul li {
+    padding: 0px;
+  }
+  footer .footer__links ul li i {
+    font-size: 16px;
+    margin-right: 10px;
+  }
 }
-footer .footer__links a {
+footer .footer__links ul a {
   color: white;
 }
 
@@ -337,6 +332,11 @@ footer .footer__links a {
   margin: 0px;
   background-color: #EAEAEA;
   box-shadow: 0px 6px 6px -9px black inset;
+}
+@media all and (min-width: 992px) {
+  .location {
+    font-size: 20px;
+  }
 }
 .location i {
   font-size: 90%;
@@ -363,6 +363,17 @@ footer .footer__links a {
 
 .operation {
   padding: 20px;
+}
+@media all and (min-width: 992px) {
+  .operation {
+    padding: 0px 20px 5px 20px;
+  }
+}
+@media all and (min-width: 992px) {
+  .operation__title {
+    text-align: center;
+    text-decoration: underline;
+  }
 }
 .operation__steps {
   display: flex;
@@ -433,6 +444,13 @@ footer .footer__links a {
   background-color: #F7F7F7;
   padding: 20px;
 }
+@media all and (min-width: 992px) {
+  .restaurants h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 0px;
+  }
+}
 .restaurants__list {
   display: flex;
   flex-direction: column;
@@ -447,6 +465,11 @@ footer .footer__links a {
 @media all and (min-width: 768px) {
   .restaurants__list a {
     width: 45%;
+  }
+}
+@media all and (min-width: 992px) {
+  .restaurants__list a {
+    width: 20%;
   }
 }
 .restaurants__list__card {
@@ -473,6 +496,17 @@ footer .footer__links a {
 @media all and (min-width: 768px) {
   .restaurants__list__card__text {
     align-items: center;
+  }
+}
+@media all and (min-width: 992px) {
+  .restaurants__list__card__text {
+    flex-direction: column;
+    padding: 10px 15px;
+    align-items: baseline;
+  }
+  .restaurants__list__card__text span {
+    width: 100%;
+    justify-content: flex-end;
   }
 }
 .restaurants__list__card__text h3,
