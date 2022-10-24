@@ -401,6 +401,7 @@ footer .footer__links ul a {
 .presentation__title {
   width: 88%;
   font-weight: 550;
+  margin-top: 0px;
 }
 .presentation__text {
   font-size: 19px;
