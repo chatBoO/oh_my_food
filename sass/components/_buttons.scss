@@ -31,6 +31,7 @@
     border-radius: 2px;
 }
 
+// like button that fills gradually when hovering
 .heart-button {
     display: flex;
     justify-content: center;
@@ -43,12 +44,14 @@
         position: relative;
         cursor: pointer;
 
+        // The button gets bigger when hovering over it
         &:hover {
             &::after {
                 transform: scale(1);
             }
         }
 
+        // Button filled with size "0" at begin
         &::after {
             content: '\f004';
             position: absolute;
@@ -57,8 +60,8 @@
             transform: scale(0);
             font-weight: 900;
             background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
-            background-clip: text;
-            color: transparent;
+            background-clip: text; // Only fills the heart
+            color: transparent;  // Reveals the background color
             transform-origin: bottom;
             transition: transform 400ms;
         }
