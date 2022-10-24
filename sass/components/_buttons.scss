@@ -1,11 +1,11 @@
-.nav-button{
+.nav-button {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 60%;
     height: 50px;
     color: #ffff;
-    background: linear-gradient(to left top, #a65cdc,  #ec73da);
+    background: linear-gradient(to left top, #a65cdc, #ec73da);
     border-radius: 25px;
 
     @media all and (min-width: $tablet-width) {
@@ -13,11 +13,12 @@
     }
 
     @media all and (min-width: $desktop-width) {
-        width: 40%;;
+        width: 40%;
+        ;
     }
 }
 
-.new-button{
+.new-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,35 +31,36 @@
     border-radius: 2px;
 }
 
-.heart-button{
+.heart-button {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
 
-    & i{
+    & i {
         font-size: 22px;
         position: relative;
         cursor: pointer;
-        &:hover{
-            &::after{
+
+        &:hover {
+            &::after {
                 transform: scale(1);
             }
-        }  
+        }
 
-    &::after{
-        content:'\f004';
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        transform: scale(0);
-        font-weight: 900;
-        background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
-        background-clip: text;
-        color: transparent;
-        transform-origin: bottom;
-        transition: transform 400ms;
+        &::after {
+            content: '\f004';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: scale(0);
+            font-weight: 900;
+            background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
+            background-clip: text;
+            color: transparent;
+            transform-origin: bottom;
+            transition: transform 400ms;
         }
     }
 }
