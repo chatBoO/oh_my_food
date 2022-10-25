@@ -189,7 +189,6 @@ a {
   border-radius: 25px;
 }
 .nav-button:hover {
-  background: #965add;
   box-shadow: 6px 6px 8px 1px rgb(199, 199, 199);
 }
 @media all and (min-width: 768px) {

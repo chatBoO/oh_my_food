@@ -9,7 +9,6 @@
     border-radius: 25px;
 
     &:hover {
-        background: lighten($color: $color-primary, $amount: 1);
         box-shadow: 6px 6px 8px 1px rgb(199, 199, 199);
     }
 
@@ -22,7 +21,6 @@
         ;
     }
 }
-
 .new-button {
     display: flex;
     justify-content: center;
