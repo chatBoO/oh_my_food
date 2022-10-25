@@ -10,7 +10,7 @@ footer {
     }
 
     & h3 {
-        @include restaurants-title;
+        @extend %restaurants-title;
         margin-bottom: 15px;
 
         @media all and (min-width: $tablet-width) {

@@ -5,8 +5,13 @@
     width: 60%;
     height: 50px;
     color: #ffff;
-    background: linear-gradient(to left top, #a65cdc, #ec73da);
+    background: $button-color;
     border-radius: 25px;
+
+    &:hover {
+        background: lighten($color: $color-primary, $amount: 1);
+        box-shadow: 6px 6px 8px 1px rgb(199, 199, 199);
+    }
 
     @media all and (min-width: $tablet-width) {
         width: 50%;

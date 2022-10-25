@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+.menu-components__title {
+  font-weight: 300;
+  font-size: medium;
+}
+
+.restaurant-menus__title, footer h3 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
+}
+
 @-webkit-keyframes opacity {
   0% {
     opacity: 1;
@@ -14,6 +24,7 @@
     z-index: -1;
   }
 }
+
 @keyframes opacity {
   0% {
     opacity: 1;
@@ -177,6 +188,10 @@ a {
   background: linear-gradient(to left top, #a65cdc, #ec73da);
   border-radius: 25px;
 }
+.nav-button:hover {
+  background: #965add;
+  box-shadow: 6px 6px 8px 1px rgb(199, 199, 199);
+}
 @media all and (min-width: 768px) {
   .nav-button {
     width: 50%;
@@ -302,8 +317,6 @@ footer {
   }
 }
 footer h3 {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
   margin-bottom: 15px;
 }
 @media all and (min-width: 768px) {
@@ -593,8 +606,6 @@ section {
   justify-content: space-between;
   align-items: center;
   padding-right: 20px;
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
   font-size: 14px;
 }
 
@@ -658,10 +669,6 @@ section {
           animation: menus 1600ms 1300ms ease-out both;
 }
 
-.menu-components__title {
-  font-weight: 300;
-  font-size: medium;
-}
 @media all and (min-width: 992px) {
   .menu-components__title {
     width: 70px;
