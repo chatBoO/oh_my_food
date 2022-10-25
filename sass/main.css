@@ -1,5 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  99% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
 @keyframes opacity {
   0% {
     opacity: 1;
@@ -12,6 +26,24 @@
   100% {
     opacity: 0;
     z-index: -1;
+  }
+}
+@-webkit-keyframes loader {
+  0% {
+    transform: rotate(0deg) scale(0);
+    opacity: 1;
+  }
+  30% {
+    transform: rotate(0deg) scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: rotate(360deg) scale(1);
+    opacity: 0.9;
+  }
+  100% {
+    transform: rotate(360deg) scale(0.1);
+    opacity: 0.7;
   }
 }
 @keyframes loader {
@@ -32,6 +64,22 @@
     opacity: 0.7;
   }
 }
+@-webkit-keyframes menus {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes menus {
   0% {
     opacity: 0;
@@ -48,6 +96,16 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes check {
+  0% {
+    opacity: 1;
+    width: 0%;
+  }
+  100% {
+    opacity: 1;
+    width: 20%;
+  }
+}
 @keyframes check {
   0% {
     opacity: 1;
@@ -56,6 +114,14 @@
   100% {
     opacity: 1;
     width: 20%;
+  }
+}
+@-webkit-keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 @keyframes rotation {
@@ -73,7 +139,8 @@
 }
 
 img {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 figure {
@@ -157,7 +224,8 @@ a {
   transform: scale(0);
   font-weight: 900;
   background-image: linear-gradient(to bottom, #9356DC, #FF79DA);
-  background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
   color: transparent;
   transform-origin: bottom;
   transition: transform 400ms;
@@ -172,9 +240,11 @@ a {
   align-items: center;
   width: 100%;
   height: 100%;
-  animation: opacity 3s forwards;
+  -webkit-animation: opacity 3s forwards;
+          animation: opacity 3s forwards;
   background-image: url(/images/loader.jpg);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .loader__logo {
   display: flex;
@@ -188,7 +258,8 @@ a {
   padding: 30px;
   font-family: "Shrikhand", cursive;
   border-radius: 15px;
-  animation: loader 3s ease-in-out both;
+  -webkit-animation: loader 3s ease-in-out both;
+          animation: loader 3s ease-in-out both;
   background: linear-gradient(to left top, #a65cdc, #ec73da);
 }
 
@@ -535,43 +606,56 @@ section {
   }
 }
 .menu-components--appetizer > .button-menu:nth-child(1) {
-  animation: menus 1600ms ease-out both;
+  -webkit-animation: menus 1600ms ease-out both;
+          animation: menus 1600ms ease-out both;
 }
 .menu-components--appetizer > .button-menu:nth-child(2) {
-  animation: menus 1600ms 300ms ease-out both;
+  -webkit-animation: menus 1600ms 300ms ease-out both;
+          animation: menus 1600ms 300ms ease-out both;
 }
 .menu-components--appetizer > .button-menu:nth-child(3) {
-  animation: menus 1600ms 400ms ease-out both;
+  -webkit-animation: menus 1600ms 400ms ease-out both;
+          animation: menus 1600ms 400ms ease-out both;
 }
 .menu-components--appetizer > .button-menu:nth-child(4) {
-  animation: menus 1600ms 500ms ease-out both;
+  -webkit-animation: menus 1600ms 500ms ease-out both;
+          animation: menus 1600ms 500ms ease-out both;
 }
 .menu-components--appetizer > .button-menu:nth-child(5) {
-  animation: menus 1600ms 500ms ease-out both;
+  -webkit-animation: menus 1600ms 500ms ease-out both;
+          animation: menus 1600ms 500ms ease-out both;
 }
 .menu-components--dish > .button-menu:nth-child(1) {
-  animation: menus 1600ms 600ms ease-out both;
+  -webkit-animation: menus 1600ms 600ms ease-out both;
+          animation: menus 1600ms 600ms ease-out both;
 }
 .menu-components--dish > .button-menu:nth-child(2) {
-  animation: menus 1600ms 700ms ease-out both;
+  -webkit-animation: menus 1600ms 700ms ease-out both;
+          animation: menus 1600ms 700ms ease-out both;
 }
 .menu-components--dish > .button-menu:nth-child(3) {
-  animation: menus 1600ms 800ms ease-out both;
+  -webkit-animation: menus 1600ms 800ms ease-out both;
+          animation: menus 1600ms 800ms ease-out both;
 }
 .menu-components--dish > .button-menu:nth-child(4) {
-  animation: menus 1600ms 900ms ease-out both;
+  -webkit-animation: menus 1600ms 900ms ease-out both;
+          animation: menus 1600ms 900ms ease-out both;
 }
 .menu-components--desserts > .button-menu:nth-child(1) {
-  animation: menus 1600ms 1000ms ease-out both;
+  -webkit-animation: menus 1600ms 1000ms ease-out both;
+          animation: menus 1600ms 1000ms ease-out both;
 }
 .menu-components--desserts > .button-menu:nth-child(2) {
-  animation: menus 1600ms 1100ms ease-out both;
+  -webkit-animation: menus 1600ms 1100ms ease-out both;
+          animation: menus 1600ms 1100ms ease-out both;
 }
 .menu-components--desserts > .button-menu:nth-child(3) {
-  animation: menus 1600ms 1200ms ease-out both;
+  -webkit-animation: menus 1600ms 1200ms ease-out both;
+          animation: menus 1600ms 1200ms ease-out both;
 }
 .menu-components--desserts > .button-menu:nth-child(4) {
-  animation: menus 1600ms 1300ms ease-out both;
+  -webkit-animation: menus 1600ms 1300ms ease-out both;
+          animation: menus 1600ms 1300ms ease-out both;
 }
 
 .menu-components__title {
@@ -631,10 +715,12 @@ section {
   white-space: nowrap;
 }
 .button-menu:hover > .button-menu__check {
-  animation: check 600ms ease-in-out both;
+  -webkit-animation: check 600ms ease-in-out both;
+          animation: check 600ms ease-in-out both;
 }
 .button-menu:hover > .button-menu__check i {
-  animation: rotation 600ms ease-in-out both;
+  -webkit-animation: rotation 600ms ease-in-out both;
+          animation: rotation 600ms ease-in-out both;
 }
 
 .button-menu__check {
@@ -654,4 +740,4 @@ section {
   justify-content: center;
   align-items: center;
   padding: 15px;
-}
+}/*# sourceMappingURL=main.css.map */
