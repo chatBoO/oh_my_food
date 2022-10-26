@@ -9,7 +9,8 @@
     border-radius: 25px;
 
     &:hover {
-        box-shadow: 6px 6px 8px 1px rgb(199, 199, 199);
+        opacity: 0.8;
+        box-shadow: 0 4px 11px rgba(0, 0, 0, 0.2);
     }
 
     @media all and (min-width: $tablet-width) {
