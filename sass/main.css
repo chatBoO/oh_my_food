@@ -16,7 +16,7 @@
     z-index: 1;
   }
   99% {
-    opacity: 1;
+    opacity: 0.9;
     z-index: 1;
   }
   100% {
@@ -31,7 +31,7 @@
     z-index: 1;
   }
   99% {
-    opacity: 1;
+    opacity: 0.9;
     z-index: 1;
   }
   100% {
@@ -257,7 +257,7 @@ a {
   height: 100%;
   -webkit-animation: opacity 3s forwards;
           animation: opacity 3s forwards;
-  background-image: url(/images/loader.jpg);
+  background-color: azure;
   -o-object-fit: cover;
      object-fit: cover;
 }
