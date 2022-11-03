@@ -24,6 +24,6 @@
         font-family: 'Shrikhand', cursive;
         border-radius: 15px;
         animation: loader 3s ease-in-out both;
-        background: linear-gradient(to left top, #a65cdc, #ec73da);
+        background: $button-color;
     }
 }

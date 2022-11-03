@@ -257,7 +257,7 @@ a {
   height: 100%;
   -webkit-animation: opacity 3s forwards;
           animation: opacity 3s forwards;
-  background-color: azure;
+  background-color: white;
   -o-object-fit: cover;
      object-fit: cover;
 }
