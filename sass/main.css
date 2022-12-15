@@ -16,7 +16,7 @@
     z-index: 1;
   }
   99% {
-    opacity: 0.9;
+    opacity: 1;
     z-index: 1;
   }
   100% {
@@ -31,7 +31,7 @@
     z-index: 1;
   }
   99% {
-    opacity: 0.9;
+    opacity: 1;
     z-index: 1;
   }
   100% {
@@ -39,40 +39,48 @@
     z-index: -1;
   }
 }
-@-webkit-keyframes loader {
-  0% {
-    transform: rotate(0deg) scale(0);
-    opacity: 1;
+@-webkit-keyframes loaderWord1 {
+  from {
+    transform: translateY(-400px);
   }
-  30% {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
+  60% {
+    transform: translateY(0px);
   }
-  70% {
-    transform: rotate(360deg) scale(1);
-    opacity: 0.9;
+  80% {
+    transform: translateY(-20%);
   }
-  100% {
-    transform: rotate(360deg) scale(0.1);
-    opacity: 0.7;
+  to {
+    transform: translateY(0px);
   }
 }
-@keyframes loader {
+@keyframes loaderWord1 {
+  from {
+    transform: translateY(-400px);
+  }
+  60% {
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-20%);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes loaderWord2 {
   0% {
-    transform: rotate(0deg) scale(0);
-    opacity: 1;
-  }
-  30% {
-    transform: rotate(0deg) scale(1);
-    opacity: 1;
-  }
-  70% {
-    transform: rotate(360deg) scale(1);
-    opacity: 0.9;
+    transform: translateY(-300%);
   }
   100% {
-    transform: rotate(360deg) scale(0.1);
-    opacity: 0.7;
+    transform: translateY(0px);
+  }
+}
+@keyframes loaderWord2 {
+  0% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 @-webkit-keyframes menus {
@@ -178,6 +186,12 @@ a {
   color: #000;
 }
 
+.loader {
+  font-family: "Shrikhand", cursive;
+  font-size: 200px;
+  font-weight: 400;
+}
+
 .nav-button {
   display: flex;
   justify-content: center;
@@ -255,27 +269,19 @@ a {
   align-items: center;
   width: 100%;
   height: 100%;
+  background-color: #99E2D0;
   -webkit-animation: opacity 3s forwards;
           animation: opacity 3s forwards;
-  background-color: white;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.loader__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 80%;
-  height: auto;
-  font-size: 270%;
-  color: beige;
-  border: 3px solid #9356DC;
-  padding: 30px;
-  font-family: "Shrikhand", cursive;
-  border-radius: 15px;
-  -webkit-animation: loader 3s ease-in-out both;
-          animation: loader 3s ease-in-out both;
-  background: linear-gradient(to left top, #a65cdc, #ec73da);
+.loader--1 {
+  -webkit-animation: loaderWord1 2s ease-out forwards;
+          animation: loaderWord1 2s ease-out forwards;
+}
+.loader--2 {
+  -webkit-animation: loaderWord2 1s ease-out 1s backwards;
+          animation: loaderWord2 1s ease-out 1s backwards;
 }
 
 header {
