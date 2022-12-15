@@ -4,7 +4,7 @@
   "description": "Scripts pour le Projet 3 - Oh my food",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/styles.css --no-source-map",
+    "sass": "sass --watch ./sass/main.scss:./sass/main.css --no-source-map",
     "prefix": "postcss ./sass/main.css --use autoprefixer -d ./css/prefixed/"
   },
   "repository": {
