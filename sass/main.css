@@ -41,7 +41,7 @@
 }
 @-webkit-keyframes loaderWord1 {
   from {
-    transform: translateY(-400px);
+    transform: translateY(-800px);
   }
   40% {
     transform: rotateX(0deg);
@@ -58,7 +58,7 @@
 }
 @keyframes loaderWord1 {
   from {
-    transform: translateY(-400px);
+    transform: translateY(-800px);
   }
   40% {
     transform: rotateX(0deg);
@@ -75,7 +75,7 @@
 }
 @-webkit-keyframes loaderWord2 {
   from {
-    transform: translateY(-500px);
+    transform: translateY(-800px);
   }
   60% {
     transform: translateY(10px) rotateX(50deg);
@@ -89,7 +89,7 @@
 }
 @keyframes loaderWord2 {
   from {
-    transform: translateY(-500px);
+    transform: translateY(-800px);
   }
   60% {
     transform: translateY(10px) rotateX(50deg);
@@ -103,7 +103,7 @@
 }
 @-webkit-keyframes loaderWord3 {
   from {
-    transform: translateX(350%);
+    transform: translateX(1000px);
   }
   80% {
     transform: translateX(-10%) rotateX(60deg);
@@ -114,7 +114,7 @@
 }
 @keyframes loaderWord3 {
   from {
-    transform: translateX(350%);
+    transform: translateX(1000px);
   }
   80% {
     transform: translateX(-10%) rotateX(60deg);
