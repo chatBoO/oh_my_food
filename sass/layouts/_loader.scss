@@ -10,20 +10,58 @@
     background-color: $color-tertiary;
     animation: opacity 5s forwards;
     object-fit: cover;
+    font-family: 'Shrikhand', cursive;
+    font-size: 12rem;
+    font-weight: 400;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 9rem;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 7rem;
+    }
+
+    @media screen and (max-width: 700px) {
+        font-size: 5rem;
+    }
+
+    @media screen and (max-width: 500px) {
+        flex-direction: column;
+        font-size: 5rem;
+        animation: opacity 4s forwards;
+    }
 
     &--1 {
         animation: loaderWord1 2s linear backwards;
+
+        @media screen and (max-width: 500px) {
+            animation: loaderWord1 2s linear reverse forwards;
+        }
     }
 
     &--2 {
         animation: loaderWord2 2s linear 0.5s backwards;
+
+        @media screen and (max-width: 500px) {
+            animation: loaderWord2 2s reverse linear 1s forwards;
+
+        }
     }
 
     &--3 {
         animation: loaderWord3 1s ease-out 2.5s backwards;
+
+        @media screen and (max-width: 500px) {
+            animation: loaderWord3 1s reverse ease-out 2.5s forwards;
+        }
     }
 
     &--4 {
         animation: loaderWord3 1s ease-out 2.5s backwards, loaderWord4 1.5s ease-out 3.5s;
+
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
     }
 }
